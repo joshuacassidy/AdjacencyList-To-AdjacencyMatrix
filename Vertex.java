@@ -6,11 +6,12 @@ public class Vertex {
     private String name;
     private List<Edge> adjacenciesList;
     private Vertex predecessor;
-    private boolean visited = false;
+    private boolean visited;
 
     public Vertex(String name) {
         this.name = name;
         this.adjacenciesList = new ArrayList<>();
+        visited = false;
     }
 
     public void addAdjacency(Vertex startVertex,Vertex targetVertex) {
